@@ -158,8 +158,20 @@ export default function Weather() {
 
     return (
         <div className="page">
-            {weatherData === null ? <div>
-                없어
+            {weatherData === null ? 
+            <div className="bg day">
+                <svg className="spinner" viewBox="0 0 50 50">
+                    <circle
+                    cx="25"
+                    cy="25"
+                    r="20"
+                    fill="none"
+                    strokeWidth="5"
+                    />
+                </svg>
+                <div className="text">
+                    Loading ...
+                </div>
             </div> :
             <div>
                 <div className={`bg ${weatherData &&

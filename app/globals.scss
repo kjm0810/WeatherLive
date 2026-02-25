@@ -253,3 +253,35 @@ body {
     background-position: 0 0;
   }
 }
+
+.loading {
+  position: fixed;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.4);
+  z-index: 9999;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spinner circle {
+  stroke: #ffffff;
+  stroke-linecap: round;
+  animation: spin 1s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
