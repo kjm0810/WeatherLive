@@ -79,8 +79,8 @@ export default function Weather() {
         };
 
         const fallback = () => {
-            const lat = 37.5665;   // 서울 기본값
-            const lon = 126.9780;
+            const lat = 47.0945;   // 서울 기본값
+            const lon = 51.9239;
             // const lat = 64.0;   // 서울 기본값
             // const lon = 149.0;
             setIsAllow(false);
@@ -169,8 +169,8 @@ export default function Weather() {
                     strokeWidth="5"
                     />
                 </svg>
-                <div className="text">
-                    Loading ...
+                <div className="loading_text">
+                    Loading
                 </div>
             </div> :
             <div>

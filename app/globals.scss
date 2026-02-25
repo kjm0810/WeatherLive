@@ -263,6 +263,13 @@ body {
   background: rgba(0,0,0,0.4);
   z-index: 9999;
 }
+.loading_text {
+  position: absolute;
+  top: calc(50% + 50px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFF;
+}
 
 .spinner {
   width: 60px;
